@@ -1,0 +1,30 @@
+body{
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+.text-container h1{
+  font-size: 100px;
+  color: rgba(255, 225, 225, 0.1);
+  background-image: url("https://png.pngtree.com/element_origin_min_pic/16/11/01/195818810a6636b.jpg");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: cover;
+  -webkit-background-clip: text;
+  animation: animate 15s linear infinite;
+  text-align: center;
+  margin-top: 20%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+@keyframes animate {
+  0%{
+    background-position: left 0px top 10px;
+  }
+  40%{
+    background-position: left 800px top 10px;
+  }
+}
