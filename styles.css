@@ -6,13 +6,56 @@
 
 body{
   font-family: 'Arimo', sans-serif;
-  font-size: 1em;
+  font-size: 17px;
 }
+
+/*REUSABLE STYLING*/
+
+h2{
+  text-align: center;
+  padding: 1em;
+}
+
+/*NAVIGATION*/
+
+header{
+  background-color: #1A1A1D;
+}
+
+#nav-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
+#nav-list li{
+  display: inline-block;
+  margin-right: .9em;
+  margin-top: 15px;
+  font-size: 1.2em;
+}
+
+#nav-list li a{
+  text-decoration: none;
+}
+
+#nav-list li a:hover,
+#nav-list li a:link,
+#nav-list li a:active,
+#nav-list li a:visited{
+  text-decoration: none;
+  color: #C3073F;
+}
+
+
+
+/*HOME SECTION*/
 
 #title{
   text-align: center;
   color: #f7f7f7;
-  background-color: #151515;
+  background-color: #1A1A1D;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,8 +65,21 @@ body{
 #title p{
   padding-bottom: 150px;
   font-size: 1.5em;
+  color: #C3073F;
 }
 
 #title h1{
   font-size: 5em;
+  color: #f7f7f7;
+}
+
+.spacer{
+  margin: 0;
+}
+
+/*ABOUT SECTION*/
+
+#about{
+  background-color: #F7F7F7;
+  color: #4E4E50;
 }
