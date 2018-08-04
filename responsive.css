@@ -1,5 +1,30 @@
-@media only screen and (max-width: 480px){
-  .text-container h1{
-    font-size: 50px;
+@media only screen and (min-width: 768px){
+
+  /*NAVIAGATION*/
+
+  #nav-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+  }
+
+  #nav-list li{
+    display: inline-block;
+    margin-right: .9em;
+    margin-top: 15px;
+    font-size: 1.2em;
+  }
+
+  #nav-list li a{
+    text-decoration: none;
+  }
+
+  #nav-list li a:hover,
+  #nav-list li a:link,
+  #nav-list li a:active,
+  #nav-list li a:visited{
+    text-decoration: none;
+    color: #BDC3C7;
   }
 }

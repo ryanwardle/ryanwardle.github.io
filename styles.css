@@ -7,6 +7,7 @@
 body{
   font-family: 'Muli', sans-serif;
   font-size: 17px;
+  background-color: #2C3E50;
 }
 
 /*REUSABLE STYLING*/
@@ -23,38 +24,28 @@ header{
 }
 
 #nav-list{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  list-style: none;
+  display: none;
 }
 
-#nav-list li{
+nav a #mobile-nav-icon{
+  float: right;
   display: inline-block;
-  margin-right: .9em;
-  margin-top: 15px;
-  font-size: 1.2em;
-}
-
-#nav-list li a{
-  text-decoration: none;
-}
-
-#nav-list li a:hover,
-#nav-list li a:link,
-#nav-list li a:active,
-#nav-list li a:visited{
-  text-decoration: none;
+  padding: 10px;
   color: #BDC3C7;
+  font-size: 20px;
 }
 
 
 
 /*HOME SECTION*/
 
+#home{
+  clear: right;
+}
+
 #title{
   text-align: center;
-  color: #F3F7F8;
+  color: #BDC3C7;
   background-color: #2C3E50;
   height: 100vh;
   display: flex;
@@ -71,7 +62,6 @@ header{
 
 #title h1{
   font-size: 4em;
-  color: #F3F7F8;
 }
 
 .spacer{
@@ -112,7 +102,7 @@ h3{
 }
 
 .skill i{
-  margin-top: 5%;
+  margin-top: 15%;
   font-size: 40px;
 }
 
