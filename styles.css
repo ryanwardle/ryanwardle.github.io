@@ -19,7 +19,7 @@ h2{
 /*NAVIGATION*/
 
 header{
-  background-color: #1A1A1D;
+  background-color: #2C3E50;
 }
 
 #nav-list{
@@ -45,7 +45,7 @@ header{
 #nav-list li a:active,
 #nav-list li a:visited{
   text-decoration: none;
-  color: #C3073F;
+  color: #BDC3C7;
 }
 
 
@@ -54,8 +54,8 @@ header{
 
 #title{
   text-align: center;
-  color: #f7f7f7;
-  background-color: #1A1A1D;
+  color: #F3F7F8;
+  background-color: #2C3E50;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -65,13 +65,13 @@ header{
 #title p{
   padding-bottom: 150px;
   font-size: 1.2em;
-  color: #C3073F;
+  color: #BDC3C7;
   margin-top: 5%;
 }
 
 #title h1{
   font-size: 4em;
-  color: #f7f7f7;
+  color: #F3F7F8;
 }
 
 .spacer{
@@ -81,8 +81,8 @@ header{
 /*ABOUT SECTION*/
 
 #about{
-  background-color: #F7F7F7;
-  color: #4E4E50;
+  background-color: #F3F7F8;
+  color: #202020;
 }
 
 #about p{
@@ -122,12 +122,6 @@ h3{
 
 
 .skill h4,
-#about h2,
-h3{
-color: #c3073F;
-}
-
-#about p,
-.skill ul li{
-
+.skill i{
+color: #2C3E50;
 }
