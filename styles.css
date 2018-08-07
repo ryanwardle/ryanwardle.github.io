@@ -94,7 +94,7 @@ h3{
 
 .skill{
   text-align: center;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 .skill ul{
@@ -114,4 +114,8 @@ h3{
 .skill h4,
 .skill i{
 color: #2C3E50;
+}
+
+.last-skill ul li:last-child{
+  margin-bottom: 50px;
 }

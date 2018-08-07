@@ -2,6 +2,10 @@
 
   /*NAVIAGATION*/
 
+  nav a #mobile-nav-icon{
+    display: none;
+  }
+
   #nav-list{
     display: flex;
     flex-direction: row;
