@@ -119,3 +119,15 @@ color: #2C3E50;
 .last-skill ul li:last-child{
   margin-bottom: 50px;
 }
+
+
+/*PROJECTS*/
+
+.project h4{
+  text-align: center;
+}
+
+img{
+  width: 100%;
+  padding: 10%;
+}
