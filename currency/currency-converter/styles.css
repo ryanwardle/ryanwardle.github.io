@@ -1,0 +1,105 @@
+*{
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+  background-color: #222;
+  color: #EEE;
+}
+
+h1{
+  text-align: center;
+  text-transform: uppercase;
+  padding: 50px 0;
+}
+
+.intro-paragraph{
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+  font-size: 15px;
+}
+
+/*Top section, Major Currencies*/
+#base-currency,
+#amount-converted{
+  width: 50%;
+  margin: auto;
+}
+
+.form-group{
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.amount-label{
+  padding-top: 30px;
+}
+
+.button-wrapper{
+  text-align: center;
+  padding: 30px 0;
+}
+
+.btn{
+  width: 200px;
+  text-align: center;
+  margin: 10px;
+}
+
+/*Display Currencies*/
+#timestamp{
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.card{
+  color: #222;
+  background-color: #DDD;
+  text-align: center;
+  display: none;
+  }
+
+.currency-col{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.card h2{
+  font-size: 30px;
+}
+
+.card p{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/*FOOTER SECTION*/
+
+.footer-section ul{
+  float: right;
+  margin-bottom: 10;
+  list-style: none;
+  padding-bottom: 0;
+  padding-top: 75px;
+}
+
+.footer-section ul li{
+  font-size: 12px;
+}
+
+.footer-section ul li a,
+.footer-section ul li a:hover,
+.footer-section ul li a:active,
+.footer-section ul li a:visited{
+  color: #EEE;
+  text-decoration: none;
+}

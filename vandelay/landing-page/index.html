@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+   integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsive.css">
+  <title>Van Delay Coffee</title>
+</head>
+<body>
+
+  <header id="header">
+    <img id="header-img" src="http://getdrawings.com/images/coffee-cup-drawing-2.png" alt="Coffee cup logo">
+    <nav id="nav-bar">
+      <a class="mobile-nav-icon" href="#"><i id="mobile-nav-icon" class="fas fa-bars"></i></a>
+      <ul id="nav-list">
+        <li class="nav-link"><a href="#home">Home</a></li>
+        <li class="nav-link"><a href="#our-story">Our Story</a></li>
+        <li class="nav-link"><a href="#pricing">Pricing</a></li>
+        <li class="nav-link"><a href="#place-order">Place Order</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main id="main">
+    <section id="home">
+      <div class="title">
+        <h1>Van Delay Coffee</h1>
+        <p>Extrordinary Coffee, Ordinary Prices</p>
+      </div>
+    </section>
+
+    <section id="our-story">
+      <h2>Our Story</h2>
+      <div class="description">
+        <p>In 2013 architect Arthur Van Delay was drinking his morning cup of coffee. The coffee was expensive but the taste
+           left much to be desired. He began to wonder about where the coffee came from and if it was possible to get better quality coffee,
+           at a more reasonable price. Arthur started to ask himself questions. Was the price of the coffee justified?
+          Was the price worth it? Was it possible to get a better cup of coffee for a better price? No, no, and yes!
+        Arthur soon quit his job as an architect to start Van Delay coffee. The reason we are able to sell
+      coffee to consumers at such a low price is because we buy our product directly from some of the best coffee
+    farmers in the entire world, effectively making us a wholesaler. Instead of buying expensive coffee from a store
+    who has greatly marked up the price, you are able to buy small batches of coffee directly from us at wholesale prices.</p>
+
+      </div>
+    </section>
+
+    <section id="pricing">
+      <h2>Pricing</h2>
+      <div class="pricing-column">
+        <div class="pricing-box box-1">
+          <i class="fas fa-sun"></i>
+          <h3>Seasonal</h3>
+          <p>Each season Van Delay Coffee provides a seasonal blend of coffee. For the summer we have
+          El Chino, farmed by the Maidana family just outside Buenos Aires, Argentina. El Chino is a medium
+        roast coffee with hints of chocolate and raspberry.</p>
+        <div class="price-amount">
+          <p>$12.99 / lb</p>
+        </div>
+        </div>
+        <div class="pricing-box box-2">
+          <i class="fas fa-calendar-alt"></i>
+          <h3>Coffee of the Month</h3>
+          <p>Similar to our seasonal coffee, we also provide a coffee of the month. This allow us to provide fresh,
+            new flavors to our customers on a frequent basis. This month we have Classic Kona. Classic Kona was grown in,
+          you guessed it, Kona, Hawaii. It is a medium roast coffee with hints of walnut and cherry.</p>
+          <div class="price-amount">
+            <p>$14.99 / lb</p>
+          </div>
+        </div>
+        <div class="pricing-box box-3">
+          <i class="fas fa-coffee"></i>
+          <h3>Wake Up</h3>
+          <p>Our Wake Up blend is always a bold, dark roast coffee to help energize you for your day.
+          Our Wake Up blends change every 2-3 months, we currently have Canelo, farmed in Oaxaca, Mexico.
+        Canelo's taste profile includes hints of cinnamon, and toasted almonds.</p>
+          <div class="price-amount">
+            <p>$13.49 / lb</p>
+          </div>
+        </div>
+      </div>
+      <div id="video-box">
+        <p>Here are some tips for a better home brewing coffee experience!</p>
+        <iframe id="video" src="https://www.youtube.com/embed/g2OurULdW6U" width="60%" height="400px;">
+        </iframe>
+      </div>
+    </section>
+
+    <section id="place-order">
+      <h2>Place Order</h2>
+      <p>Fill out the form below to place an order with us.</p>
+
+    <form id="form">
+
+      <input id="name" type="text" placeholder="NAME">
+
+      <input id="address" type="text" placeholder="SHIPPING ADDRESS">
+      <input id="address-line2" type="text" placeholder="ADDRESS LINE 2">
+
+      <input id="email" type="text" placeholder="EMAIL">
+
+      <input type="text" placeholder="BAGS OF SEASONAL">
+      <input type="text" placeholder="BAGS OF MONTHLY">
+      <input type="text" placeholder="BAGS OF WAKE UP">
+
+      <textarea name="name" rows="8" cols="80" placeholder="COMMENTS"></textarea>
+
+      <input id="submit" type="submit" value="Submit">
+    </form>
+
+    </section>
+
+    <footer id="footer">
+      <div class="copyright-icons">
+        <ul class="left-footer">
+          <li>Follow us on <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+          <li>Copyright (c) 2018 Van Delay Coffee</li>
+        </ul>
+      </div>
+      <div class="dev-info">
+        <ul class="right-footer">
+          <li>Designed and coded by Ryan Wardle</li>
+          <li>View my profile on <a href="">Github<i class="fab fa-github"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+
+  </main>
+
+<!--Jquery---------------->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>

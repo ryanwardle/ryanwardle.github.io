@@ -1,0 +1,85 @@
+@media only screen and (max-width: 1200px){
+  body{
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  body{
+    font-size: .85em;
+  }
+
+  .nav-div ul{
+    display: none;
+  }
+
+  .mobile-nav-icon{
+    display: inline-block;
+    float: right;
+  }
+
+  .nav{
+    float: left;
+    display: block;
+    padding-left: 5%;
+    margin: 0;
+  }
+
+  .nav-div ul li{
+    display: block;
+  }
+
+  .nav-div ul li a:link,
+  .nav-div ul li a:visited{
+    display: block;
+  }
+
+  .nav li a::after{
+    display: none;
+  }
+
+  .info-hours{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info-location h3{
+    display: flex;
+    justify-content: center;
+  }
+
+  footer{
+    font-size: .8em
+  }
+
+}
+
+@media only screen and (max-width: 650px){
+  .general-info{
+    padding-top: 30px;
+  }
+  }
+
+
+@media only screen and (max-width: 480px){
+  .general-info p{
+    font-size: 15px;
+  }
+
+  .restaurant-name h1{
+    font-size: 25px;
+  }
+
+  .footer-right p,
+  .footer-left p,
+  .footer-right ul li,
+  .footer-left ul li{
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  footer{
+    padding-bottom: 10px;
+  }
+}
