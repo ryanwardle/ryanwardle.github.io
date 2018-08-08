@@ -125,9 +125,21 @@ color: #2C3E50;
 
 .project h4{
   text-align: center;
+  padding-top: 10%;
 }
 
 img{
   width: 100%;
   padding: 10%;
+}
+
+.project a{
+text-decoration: none;
+}
+
+.project a:hover,
+.project a:link,
+.project a:active,
+.project a:visited{
+  color: #202020;
 }
