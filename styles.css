@@ -123,9 +123,23 @@ color: #2C3E50;
 
 /*PROJECTS*/
 
-.project h4{
+.project img{
+  margin-top: 20%;
+}
+
+.project p,
+.project ul{
+  margin-top: 5%;
+}
+
+.project h4,
+.project p,
+.project ul{
   text-align: center;
-  padding-top: 10%;
+}
+
+.project ul{
+  list-style: none;
 }
 
 img{
