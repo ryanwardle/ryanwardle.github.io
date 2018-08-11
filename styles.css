@@ -157,3 +157,39 @@ text-decoration: none;
 .project a:visited{
   color: #202020;
 }
+
+.project #last-item{
+  margin-bottom: 5%;
+}
+
+/*CONTACT*/
+
+#contact{
+  background-color: #FFF;
+}
+
+#contact p{
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+
+/*FOOTER*/
+
+footer ul{
+  float: right;
+  font-size: .7em;
+  list-style: none;
+}
+
+footer ul li{
+  margin: 2% 10px;
+}
+
+footer #top{
+  margin-top: 5%;
+}
+
+footer #bottom{
+  margin-bottom: 5%;
+}
