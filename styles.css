@@ -41,8 +41,13 @@ nav a #mobile-nav-icon{
 /*HOME SECTION*/
 
 #home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
   clear: right;
-  background-image: url("img/background-photo.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("img/background-photo.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -51,8 +56,6 @@ nav a #mobile-nav-icon{
 
 #title{
   text-align: center;
-  display: flex;
-  flex-direction: column;
 }
 
 #title p{
