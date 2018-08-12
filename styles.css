@@ -7,7 +7,8 @@
 body{
   font-family: 'Muli', sans-serif;
   font-size: 17px;
-  background-color: #2C3E50;
+  color: #F6F6F6;
+  background-color: #111;
 }
 
 /*REUSABLE STYLING*/
@@ -19,8 +20,8 @@ h2{
 
 /*NAVIGATION*/
 
-header{
-  background-color: #2C3E50;
+header nav{
+  height: 40px;
 }
 
 #nav-list{
@@ -31,8 +32,8 @@ nav a #mobile-nav-icon{
   float: right;
   display: inline-block;
   padding: 10px;
-  color: #BDC3C7;
   font-size: 20px;
+  color: #F6F6F6;
 }
 
 
@@ -41,22 +42,22 @@ nav a #mobile-nav-icon{
 
 #home{
   clear: right;
+  background-image: url("img/background-photo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
 }
 
 #title{
   text-align: center;
-  color: #BDC3C7;
-  background-color: #2C3E50;
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 #title p{
   padding-bottom: 150px;
   font-size: 1.2em;
-  color: #BDC3C7;
   margin-top: 5%;
 }
 
@@ -64,9 +65,6 @@ nav a #mobile-nav-icon{
   font-size: 4em;
 }
 
-.spacer{
-  margin: 0;
-}
 
 /*ABOUT SECTION*/
 
