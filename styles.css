@@ -72,8 +72,13 @@ nav a #mobile-nav-icon{
 /*ABOUT SECTION*/
 
 #about{
-  background-color: #F3F7F8;
+  background-color: #E6E6E6;
   color: #202020;
+}
+
+#about h2,
+#about h3{
+  color: #F81B1B;
 }
 
 #about p{
@@ -114,7 +119,7 @@ h3{
 
 .skill h4,
 .skill i{
-color: #2C3E50;
+color: #F81B1B;
 }
 
 .last-skill ul li:last-child{
@@ -123,6 +128,11 @@ color: #2C3E50;
 
 
 /*PROJECTS*/
+
+#projects{
+  background-color: #D5D5D5;
+  color: #202020;
+}
 
 .project img{
   margin-top: 20%;
@@ -160,7 +170,7 @@ text-decoration: none;
 }
 
 .project #last-item{
-  margin-bottom: 5%;
+  padding-bottom: 5%;
 }
 
 /*CONTACT*/
