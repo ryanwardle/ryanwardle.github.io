@@ -20,6 +20,10 @@ h2{
 
 /*NAVIGATION*/
 
+header{
+  color: #F6F6F6;
+}
+
 header nav{
   height: 40px;
 }
@@ -36,7 +40,11 @@ nav a #mobile-nav-icon{
   color: #F6F6F6;
 }
 
-
+#name{
+  float: left;
+  padding: 10px;
+  font-size: 12px;
+}
 
 /*HOME SECTION*/
 
@@ -46,7 +54,7 @@ nav a #mobile-nav-icon{
   justify-content: center;
   align-content: center;
   align-items: center;
-  clear: right;
+  clear: both;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("img/background-photo.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -60,28 +68,28 @@ nav a #mobile-nav-icon{
 
 #title p{
   padding-bottom: 150px;
-  font-size: 1.2em;
+  font-size: 1em;
   margin-top: 5%;
 }
 
 #title h1{
-  font-size: 4em;
+  font-size: 2em;
+  color: #F81B1B;
 }
 
 
-/*ABOUT SECTION*/
+/*SKILLS SECTION*/
 
-#about{
+#skills{
   background-color: #E6E6E6;
   color: #202020;
 }
 
-#about h2,
-#about h3{
+#skills h3{
   color: #F81B1B;
 }
 
-#about p{
+#skills p{
   text-align: center;
   margin: 0 5%;
 }
@@ -130,12 +138,18 @@ color: #F81B1B;
 /*PROJECTS*/
 
 #projects{
-  background-color: #D5D5D5;
+  background-color: #DEDEDE;
   color: #202020;
 }
 
-.project img{
+.project p{
+  margin: 0 5%;
+}
+
+.project h4{
+  color: #F81B1B;
   margin-top: 20%;
+  font-size: 1.2em;
 }
 
 .project p,
@@ -151,6 +165,13 @@ color: #F81B1B;
 
 .project ul{
   list-style: none;
+}
+
+.project ul li{
+  background-color: #F81B1B;
+  color: #F6F6F6;
+  border-radius: 5px;
+  margin: 10px 30%;
 }
 
 img{
@@ -173,10 +194,25 @@ text-decoration: none;
   padding-bottom: 5%;
 }
 
+.hr-container{
+  display: flex;
+  justify-content: center;
+}
+
+.hr-container hr{
+  height: 10px;
+  width: 70%;
+  margin: 15% 0;
+  border: 0;
+  box-shadow: 0 10px 10px -15px #111 inset;
+}
+
+
 /*CONTACT*/
 
 #contact{
-  background-color: #FFF;
+  background-color: #E6E6E6;
+  color: #202020;
 }
 
 #contact p{
