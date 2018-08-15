@@ -58,6 +58,7 @@ nav a #mobile-nav-icon{
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("img/background-photo.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   background-size: cover;
   height: 100vh;
 }
@@ -76,6 +77,10 @@ nav a #mobile-nav-icon{
   font-size: 2em;
   color: #F81B1B;
   margin: 0 5%;
+}
+
+.colored-name{
+  color: #F81B1B;
 }
 
 
@@ -207,6 +212,7 @@ text-decoration: none;
 
 .github{
   padding-bottom: 10%;
+  padding-top: 5%;
 }
 
 /*CONTACT*/
