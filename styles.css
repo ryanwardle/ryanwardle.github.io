@@ -69,12 +69,13 @@ nav a #mobile-nav-icon{
 #title p{
   padding-bottom: 150px;
   font-size: 1em;
-  margin-top: 5%;
+  margin: 10% 5%;
 }
 
 #title h1{
   font-size: 2em;
   color: #F81B1B;
+  margin: 0 5%;
 }
 
 
@@ -142,6 +143,11 @@ color: #F81B1B;
   color: #202020;
 }
 
+.project{
+  margin: 10%;
+  box-shadow: 10px 10px 10px 10px #888;
+}
+
 .project p{
   margin: 0 5%;
 }
@@ -150,6 +156,7 @@ color: #F81B1B;
   color: #F81B1B;
   margin-top: 20%;
   font-size: 1.2em;
+  padding-top: 10%;
 }
 
 .project p,
@@ -190,23 +197,17 @@ text-decoration: none;
   color: #202020;
 }
 
-.project #last-item{
-  padding-bottom: 5%;
+#last-project{
+  margin-bottom: 0;
 }
 
-.hr-container{
-  display: flex;
-  justify-content: center;
+.spacer{
+  padding-top: 10%;
 }
 
-.hr-container hr{
-  height: 10px;
-  width: 70%;
-  margin: 15% 0;
-  border: 0;
-  box-shadow: 0 10px 10px -15px #111 inset;
+.github{
+  padding-bottom: 10%;
 }
-
 
 /*CONTACT*/
 
