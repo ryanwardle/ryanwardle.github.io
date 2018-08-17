@@ -220,11 +220,41 @@ text-decoration: none;
 #contact{
   background-color: #E6E6E6;
   color: #202020;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#contact p{
-  text-align: center;
-  padding-bottom: 5%;
+#contact-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+form{
+  background-color: #F81B1B;
+  width: 80%;
+  margin-bottom: 5%;
+}
+
+#contact-info:first-child{
+  padding-top: 5%;
+}
+
+#contact-info input{
+  width: 40%;
+  margin-bottom: 2%;
+}
+
+#contact textarea{
+  width: 80%;
+  margin-bottom: 5%;
+}
+
+#contact input,
+#contact textarea{
+  background-color: #DEDEDE;
 }
 
 
@@ -246,4 +276,13 @@ footer #top{
 
 footer #bottom{
   margin-bottom: 5%;
+}
+
+footer #bottom a,
+footer #bottom a:hover,
+footer #bottom a:link,
+footer #bottom a:visited,
+footer #bottom a:active{
+  color: #E6E6E6;
+  text-decoration: none;
 }
