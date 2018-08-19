@@ -236,6 +236,19 @@ form{
   background-color: #F81B1B;
   width: 80%;
   margin-bottom: 5%;
+  position: relative;  /*WORKING ON FORM EFFECT*/
+}
+
+form::after{
+  content: '';
+  display: block;
+  width: 60%;
+  height: 100px;
+  box-shadow: 0 2px 120px rgba(0,0,0, .75);
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  z-index: -1;
 }
 
 #contact-info:first-child{
