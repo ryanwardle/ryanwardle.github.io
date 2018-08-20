@@ -1,3 +1,11 @@
+//WOW JS, reveal animation on scroll
+
+new WOW().init();
+
+
+//STICKY-NAV
+
+
 function enableStickyNav() {
 
   const nav = document.getElementById('nav-bar');
