@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: 'Arimo', sans-serif;
+  font-size: 1.8rem;
+  padding: 3rem;
+}
+
+$color-primary-light: #FF2727;
+$color-primary: #FF0000;
+$color-primary-dark: #D60000;
+
+/*
+light red #ff2727
+red #ff0000
+dark red #d60000;
+*/
+
+.header{
+  font-family: 'Permanent Marker', cursive;
+  color: #f7f7f7;
+  background-image: linear-gradient(to right bottom, rgba($color-primary-light, .9), rgba($color-primary-dark, .9)), url(hero-img.jpeg);
+  background-size: cover;
+  height: 95vh;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+
+
+  svg{
+    width: 100%;
+    font-size: 8rem;
+    letter-spacing: 1rem;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-66%, -50%);
+
+
+    text{
+      stroke: #fff;
+      fill: none;
+      stroke-dasharray: 500;
+      stroke-dashoffset: 500;
+      animation: animateDrawing 3s linear forwards;
+    }
+  }
+
+  h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: heading 1s ease-in forwards 2s;
+  }
+}
+
+@keyframes animateDrawing{
+  100%{
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes heading{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+
+.about-section{
+  background-color: #F7F7F7;
+  margin-top: -25vh;
+  padding: 25rem 0;
+  text-align: center;
+}

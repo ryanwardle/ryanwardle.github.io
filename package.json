@@ -1,0 +1,22 @@
+{
+  "name": "ryanwardle.github.io",
+  "version": "1.0.0",
+  "description": "Ryan Wardle portfolio page",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanwardle/ryanwardle.github.io.git"
+  },
+  "author": "Ryan Wardle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanwardle/ryanwardle.github.io/issues"
+  },
+  "homepage": "https://github.com/ryanwardle/ryanwardle.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
