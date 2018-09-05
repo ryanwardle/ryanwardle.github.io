@@ -27,7 +27,7 @@ dark red #d60000;
 .header{
   font-family: 'Permanent Marker', cursive;
   color: #f7f7f7;
-  background-image: linear-gradient(to right bottom, rgba($color-primary-light, .9), rgba($color-primary-dark, .9)), url(hero-img.jpeg);
+  background-image: linear-gradient(to right bottom, rgba($color-primary-light, .9), rgba($color-primary-dark, .9)), url(img/hero-img.jpeg);
   background-size: cover;
   height: 95vh;
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
