@@ -1,0 +1,12 @@
+.heading-secondary{
+  background-image: linear-gradient(to right, rgba($color-primary-light, .9), rgba($color-primary-dark, .9));
+  background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  margin-bottom: 8rem;
+  letter-spacing: 2px;
+
+  &__text{
+    width: 75%;
+  }
+}

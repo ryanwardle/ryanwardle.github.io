@@ -14,10 +14,12 @@ body{
   padding: 3rem;
 }
 
-$color-primary-light: #FF2727;
-$color-primary: #FF0000;
-$color-primary-dark: #D60000;
+@import "abstracts/variables";
+@import "abstracts/mixins";
 
+@import "base/typography";
+
+@import "components/about-box";
 /*
 light red #ff2727
 red #ff0000
