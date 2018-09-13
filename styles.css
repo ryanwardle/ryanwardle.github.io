@@ -22,12 +22,13 @@ body {
 .about-box {
   display: flex;
   justify-content: center;
-  transform: skewY(-12deg);
-  border: 1px solid black; }
+  transform: skewX(-12deg);
+  border: 1px solid black;
+  flex-basis: 75%; }
   .about-box__text {
     padding: 5rem;
     width: 75%;
-    transform: skewY(12deg); }
+    transform: skewX(12deg); }
 
 /*
 light red #ff2727
