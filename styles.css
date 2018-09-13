@@ -18,19 +18,17 @@ body {
   text-transform: uppercase;
   margin-bottom: 8rem;
   letter-spacing: 2px; }
-  .heading-secondary__text {
-    width: 75%; }
 
-/*
 .about-box {
-  width: 75%;
-  transform: skewY(-15deg);
-  box-shadow: 0 3rem 5rem #555;
-  height: auto;
+  display: flex;
+  justify-content: center;
+  transform: skewY(-12deg);
+  border: 1px solid black; }
+  .about-box__text {
+    padding: 5rem;
+    width: 75%;
+    transform: skewY(12deg); }
 
-
-}
-*/
 /*
 light red #ff2727
 red #ff0000

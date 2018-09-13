@@ -1,10 +1,12 @@
-/*
 .about-box {
-  width: 75%;
-  transform: skewY(-15deg);
-  box-shadow: 0 3rem 5rem #555;
-  height: auto;
+  display: flex;
+  justify-content: center;
+  transform: skewX(-12deg);
+  border: 1px solid black;
 
-
+  &__text{
+    padding: 5rem;
+    width: 75%;
+    transform: skewX(12deg);
+  }
 }
-*/
