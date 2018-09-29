@@ -1,0 +1,43 @@
+.card-container{
+  display: flex;
+  justify-content: space-around;
+  //border: 1px solid black;
+
+  &__card{
+    flex-basis: 20%;
+    background-color: $color-primary;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    color: #E7E7E7;
+    border-radius: 5px;
+    box-shadow: 0 2rem 4rem rgba($color-black, .3);
+    transition: all .3s;
+
+    &:hover{
+      transform: scale(1.05) translateY(-1.5rem);
+      box-shadow: 0 2.5rem 4.5rem rgba($color-black, .4);
+    }
+  }
+
+  h4{
+    color: #E7E7E7;
+  }
+
+  svg{
+    width: 4rem;
+    height: 4rem;
+    fill: #E7E7E7;
+    margin-bottom: 1rem;
+  }
+
+  ul{
+    list-style: none;
+
+    li{
+
+      &:not(:last-child){
+        margin-bottom: .5rem;
+      }
+    }
+  }
+}

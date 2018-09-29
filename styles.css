@@ -39,6 +39,8 @@ h3 {
     padding: 5rem;
     width: 75%;
     transform: skewX(12deg); }
+  .about-box p {
+    margin-bottom: 5rem; }
 
 .card-container {
   display: flex;
