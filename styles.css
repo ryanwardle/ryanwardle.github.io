@@ -33,12 +33,10 @@ h3 {
 .about-box {
   display: flex;
   justify-content: center;
-  transform: skewX(-12deg);
   flex-basis: 75%; }
   .about-box__text {
     padding: 5rem;
-    width: 75%;
-    transform: skewX(12deg); }
+    width: 75%; }
   .about-box p {
     margin-bottom: 5rem; }
 
@@ -69,11 +67,38 @@ h3 {
     .card-container ul li:not(:last-child) {
       margin-bottom: .5rem; }
 
-/*
-light red #ff2727
-red #ff0000
-dark red #d60000;
+/*.projects-container{
+  display: flex;
+  flex-direction: column;
+
+  .project{
+    display: flex;
+
+    &__img-tech-box{
+      display: flex;
+      flex-direction: column;
+    }
+
+  &__description-link-box{
+    display: flex;
+    flex-direction: column;
+    }
+  }
+
+}
 */
+.projects-container {
+  color: #D60000;
+  display: flex;
+  flex-direction: column; }
+  .projects-container .project {
+    display: flex;
+    flex-direction: column; }
+    .projects-container .project__info {
+      display: flex; }
+      .projects-container .project__info__img-tech-box a img {
+        width: 50rem; }
+
 .header {
   font-family: 'Permanent Marker', cursive;
   color: #f7f7f7;
@@ -122,4 +147,7 @@ dark red #d60000;
 
 .projects-section {
   text-align: center;
-  background-color: #EFEFEF; }
+  background-color: #EFEFEF;
+  overflow: hidden; }
+  .projects-section h2 {
+    margin-top: 8rem; }

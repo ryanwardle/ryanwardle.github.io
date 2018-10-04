@@ -1,0 +1,42 @@
+/*.projects-container{
+  display: flex;
+  flex-direction: column;
+
+  .project{
+    display: flex;
+
+    &__img-tech-box{
+      display: flex;
+      flex-direction: column;
+    }
+
+  &__description-link-box{
+    display: flex;
+    flex-direction: column;
+    }
+  }
+
+}
+*/
+
+.projects-container{
+  color: $color-primary-dark;
+  display: flex;
+  flex-direction: column;
+
+  .project{
+    display: flex;
+    flex-direction: column;
+
+    &__info{
+      display: flex;
+
+      &__img-tech-box{
+
+        a img{
+          width: 50rem;
+        }
+      }
+    }
+  }
+}

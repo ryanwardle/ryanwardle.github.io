@@ -1,13 +1,11 @@
 .about-box {
   display: flex;
   justify-content: center;
-  transform: skewX(-12deg);
   flex-basis: 75%;
 
   &__text{
     padding: 5rem;
     width: 75%;
-    transform: skewX(12deg);
   }
 
   p{

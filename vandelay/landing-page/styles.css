@@ -61,6 +61,7 @@ body{
   width: 100%;
   transition: 1s;
   background-color: #DDD;
+  z-index: 20;
 }
 
 .fixed-nav #header-img{
