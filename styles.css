@@ -14,6 +14,9 @@ body {
 .margin-bottom-small {
   margin-bottom: 2rem; }
 
+.margin-bottom-medium {
+  margin-bottom: 4rem; }
+
 .margin-bottom-large {
   margin-bottom: 8rem; }
 
@@ -67,37 +70,38 @@ h3 {
     .card-container ul li:not(:last-child) {
       margin-bottom: .5rem; }
 
-/*.projects-container{
-  display: flex;
-  flex-direction: column;
-
-  .project{
-    display: flex;
-
-    &__img-tech-box{
-      display: flex;
-      flex-direction: column;
-    }
-
-  &__description-link-box{
-    display: flex;
-    flex-direction: column;
-    }
-  }
-
-}
-*/
 .projects-container {
   color: #D60000;
   display: flex;
   flex-direction: column; }
   .projects-container .project {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-bottom: 15rem; }
+    .projects-container .project:last-child {
+      margin-bottom: 10rem; }
     .projects-container .project__info {
       display: flex; }
-      .projects-container .project__info__img-tech-box a img {
-        width: 50rem; }
+      .projects-container .project__info__img-tech-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-basis: 50%;
+        margin-left: 3rem; }
+        .projects-container .project__info__img-tech-box a img {
+          width: 40rem; }
+        .projects-container .project__info__img-tech-box ul {
+          list-style: none; }
+      .projects-container .project__info__description-link-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        flex-basis: 50%;
+        margin-right: 3rem; }
+        .projects-container .project__info__description-link-box svg {
+          width: 4rem;
+          height: 4rem; }
 
 .header {
   font-family: 'Permanent Marker', cursive;
