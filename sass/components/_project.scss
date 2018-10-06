@@ -1,15 +1,18 @@
 .projects-container{
-  color: $color-primary-dark;
+  //color: $color-primary-dark;
+  color: #e7e7e7;
   display: flex;
   flex-direction: column;
 
   .project{
     display: flex;
     flex-direction: column;
-    margin-bottom: 15rem;
+    padding-bottom: 15rem;
+    position: relative;
 
-    &:last-child{
-      margin-bottom: 10rem;
+    h3{
+      color: #e7e7e7;
+      margin-top: 8rem;
     }
 
     &__info{
@@ -46,6 +49,7 @@
           margin-left: .5rem;
         }
 
+//STYLING FOR GITHUB BUTTON
         a{
           display: flex;
           align-items: center;
@@ -62,6 +66,41 @@
           }
         }
       }
+    }
+
+
+//STYLING FOR SECTION WITH GREY BACKGROUND
+    &--grey{
+      background-color: #e7e7e7;
+      color: $color-primary;
+
+      h3{
+        @include headingColor;
+      }
+    }
+
+    //STYLING FOR SECTION SEPERATORS
+
+    &::before,
+    &::after{
+      position: absolute;
+      content: "";
+      left: 50%;
+      width: 10rem;
+      height: 10rem;
+      -webkit-transform: translateX(-50%) rotate(45deg);
+      transform: translateX(-50%) rotate(45deg);
+    }
+
+    &::before{
+      top: -5rem;
+      background: $color-primary-dark;
+    }
+
+    &::after{
+      bottom: -5rem;
+      z-index: 10;
+      background: inherit;
     }
   }
 }

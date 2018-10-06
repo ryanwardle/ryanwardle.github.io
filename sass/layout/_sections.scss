@@ -7,10 +7,13 @@
 
 .projects-section{
   text-align: center;
-  background-color: #EFEFEF;
+  //background-color: #EFEFEF;
+  background-color: $color-primary-dark;
   overflow: hidden;
 
   h2{
     margin-top: 8rem;
+    color: #e7e7e7;
+    letter-spacing: 2px;
   }
 }
