@@ -197,3 +197,9 @@ h3 {
     margin-top: 8rem;
     color: #e7e7e7;
     letter-spacing: 2px; }
+
+.contact-section {
+  text-align: center; }
+  .contact-section h2 {
+    margin-top: 8rem;
+    letter-spacing: 2px; }
