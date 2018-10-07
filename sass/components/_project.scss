@@ -12,7 +12,7 @@
 
     h3{
       color: #e7e7e7;
-      margin-top: 8rem;
+      margin-top: 18rem;
     }
 
     &__info{
@@ -81,26 +81,31 @@
 
     //STYLING FOR SECTION SEPERATORS
 
-    &::before,
-    &::after{
-      position: absolute;
-      content: "";
-      left: 50%;
-      width: 10rem;
-      height: 10rem;
-      -webkit-transform: translateX(-50%) rotate(45deg);
-      transform: translateX(-50%) rotate(45deg);
+    &:not(:first-child){
+      &::before,
+      &::after{
+        position: absolute;
+        content: "";
+        left: 50%;
+        width: 10rem;
+        height: 10rem;
+        -webkit-transform: translateX(-50%) rotate(45deg);
+        transform: translateX(-50%) rotate(45deg);
+        border: 1px solid transparent;
+      }
+
+      &::before{
+        top: -5rem;
+        background: $color-primary-dark;
+      }
+
+      &::after{
+        bottom: -5rem;
+        z-index: 10;
+        background: inherit;
+      }
     }
 
-    &::before{
-      top: -5rem;
-      background: $color-primary-dark;
-    }
 
-    &::after{
-      bottom: -5rem;
-      z-index: 10;
-      background: inherit;
-    }
   }
 }

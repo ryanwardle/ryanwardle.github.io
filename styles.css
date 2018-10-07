@@ -81,7 +81,7 @@ h3 {
     position: relative; }
     .projects-container .project h3 {
       color: #e7e7e7;
-      margin-top: 8rem; }
+      margin-top: 18rem; }
     .projects-container .project__info {
       display: flex; }
       .projects-container .project__info__img-tech-box {
@@ -126,18 +126,19 @@ h3 {
         background-clip: text;
         color: transparent;
         text-transform: uppercase; }
-    .projects-container .project::before, .projects-container .project::after {
+    .projects-container .project:not(:first-child)::before, .projects-container .project:not(:first-child)::after {
       position: absolute;
       content: "";
       left: 50%;
       width: 10rem;
       height: 10rem;
       -webkit-transform: translateX(-50%) rotate(45deg);
-      transform: translateX(-50%) rotate(45deg); }
-    .projects-container .project::before {
+      transform: translateX(-50%) rotate(45deg);
+      border: 1px solid transparent; }
+    .projects-container .project:not(:first-child)::before {
       top: -5rem;
       background: #D60000; }
-    .projects-container .project::after {
+    .projects-container .project:not(:first-child)::after {
       bottom: -5rem;
       z-index: 10;
       background: inherit; }
