@@ -1,0 +1,30 @@
+.footer{
+  background-image: linear-gradient(to right bottom, rgba($color-primary-light, .9), rgba($color-primary-dark, .9));
+  color: #f7f7f7;
+  font-size: 1.4rem;
+  min-height: 10rem;
+
+  .footer-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+
+    &__nav{
+
+      ul{
+        display: flex;
+        list-style: none;
+
+        li{
+          padding: 0 .5rem;
+        }
+      }
+    }
+
+    &__paragraph{
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+}

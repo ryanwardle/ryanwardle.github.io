@@ -1,8 +1,7 @@
 .projects-container{
-  color: #e7e7e7;
+  color: #F7F7F7;
   display: flex;
   flex-direction: column;
-
 
   .project{
     display: flex;
@@ -11,7 +10,7 @@
     position: relative;
 
     h3{
-      color: #e7e7e7;
+      color: #F7F7F7;
       margin-top: 18rem;
     }
 
@@ -71,7 +70,7 @@
 
 //STYLING FOR SECTION WITH GREY BACKGROUND
     &--grey{
-      background-color: #e7e7e7;
+      background-color: #F7F7F7;
       color: $color-primary;
 
       h3{
