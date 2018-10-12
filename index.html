@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<header class="header">
+<header class="header" id="header">
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <text x="50%" y="50%">Ryan Wardle</text>
   </svg>
@@ -19,7 +19,7 @@
 </header>
 
 <main>
-  <section class="about-section">
+  <section class="about-section" id="about">
     <h2 class="heading-secondary margin-bottom-large">About</h2>
 
     <div class="about-box">
@@ -70,7 +70,7 @@
     </div>
   </section>
 
-  <section class="projects-section">
+  <section class="projects-section" id="projects">
     <h2>Projects</h2>
 
     <div class="projects-container">
@@ -81,7 +81,7 @@
 
         <div class="project__info">
           <div class="project__info__img-tech-box">
-            <a class="margin-bottom-small" href="vandelay/landing-page/index.html" target="_blank"><img src="img/vandelay-img.png" alt="Van Delay Coffee Image"></a>
+            <img class="margin-bottom-medium" src="img/vandelay-img.png" alt="Van Delay Coffee Image">
             <h4 class="margin-bottom-small">Technologies used</h4>
             <ul>
               <li>HTML</li>
@@ -95,7 +95,10 @@
             <p>Van Delay Coffee is a project I created for a fictional wholesale coffee business. I created a landing
             page for the business, and built the entire project using only flexbox. I also used WOW.js with Animate CSS to
            trigger animations when the user scrolls.</p>
-           <a href="https://github.com/ryanwardle/Landing-Page" target="_blank">View this project on GitHub <svg><use xlink:href="img/sprites.svg#icon-github-with-circle"></use></svg></a>
+
+           <a class="view-project-btn" href="vandelay/landing-page/index.html" target="_blank"><h5>View this project</h5></a>
+
+           <a class="black-btn" href="https://github.com/ryanwardle/Landing-Page" target="_blank">View this project on GitHub <svg><use xlink:href="img/sprites.svg#icon-github-with-circle"></use></svg></a>
           </div>
         </div>
       </div>
@@ -107,7 +110,7 @@
 
         <div class="project__info">
           <div class="project__info__img-tech-box">
-            <a class="margin-bottom-small" href="currency/currency-converter/index.html" target="_blank"><img src="img/currency-img.png" alt="Currency Converter Image"></a>
+            <img class="margin-bottom-medium" src="img/currency-img.png" alt="Currency Converter Image">
             <h4 class="margin-bottom-small">Technologies used</h4>
             <ul>
               <li>HTML</li>
@@ -121,7 +124,10 @@
           <div class="project__info__description-link-box">
             <p>I used the Fixer API to created a currency converter that will take in one of the the world's seven most popular currencies,
               and convert it to the remaining six.</p>
-           <a href="https://github.com/ryanwardle/Currency-Converter" target="_blank">View this project on GitHub <svg><use xlink:href="img/sprites.svg#icon-github-with-circle"></use></svg></a>
+
+           <a class="view-project-btn" href="currency/currency-converter/index.html" target="_blank"><h5>View this project</h5></a>
+
+           <a class="black-btn" href="https://github.com/ryanwardle/Currency-Converter" target="_blank">View this project on GitHub <svg><use xlink:href="img/sprites.svg#icon-github-with-circle"></use></svg></a>
           </div>
         </div>
       </div>
@@ -133,7 +139,7 @@
 
         <div class="project__info">
           <div class="project__info__img-tech-box">
-            <a class="margin-bottom-small" href="godfathers/pizza-restaurant/index.html" target="_blank"><img src="img/godfathers-img.png" alt="Godfather's Pizza Image"></a>
+            <img class="margin-bottom-medium" src="img/godfathers-img.png" alt="Godfather's Pizza Image">
             <h4 class="margin-bottom-small">Technologies used</h4>
             <ul>
               <li>HTML</li>
@@ -146,14 +152,17 @@
           <div class="project__info__description-link-box">
             <p>Godfather's Pizza is a fictional business that I created, a local pizza restaurant. I designed and coded a website for the business, providing a menu for the business and
             a map with the location of the business.</p>
-            <a href="https://github.com/ryanwardle/Pizza-Restaurant" target="_blank">View this project on GitHub <svg><use xlink:href="img/sprites.svg#icon-github-with-circle"></use></svg></a>
+
+            <a class="view-project-btn" href="godfathers/pizza-restaurant/index.html" target="_blank"><h5>View this project</h5></a>
+
+            <a class="black-btn" href="https://github.com/ryanwardle/Pizza-Restaurant" target="_blank">View this project on GitHub <svg><use xlink:href="img/sprites.svg#icon-github-with-circle"></use></svg></a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="contact-section">
+  <section class="contact-section" id="contact">
     <h2 class="heading-secondary">Contact</h2>
     <p>In order to contact me or to inquire about having a website built, please send me a message using the form below</p>
     <form action="" class="form">
@@ -169,10 +178,10 @@
   <div class="footer-info">
     <div class="footer-info__nav">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
 

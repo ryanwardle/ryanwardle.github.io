@@ -22,12 +22,14 @@ body {
 
 h3 {
   background-image: linear-gradient(to right, rgba(255, 39, 39, 0.9), rgba(214, 0, 0, 0.9));
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   text-transform: uppercase; }
 
 .heading-secondary {
   background-image: linear-gradient(to right, rgba(255, 39, 39, 0.9), rgba(214, 0, 0, 0.9));
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   text-transform: uppercase;
@@ -42,6 +44,34 @@ h3 {
     width: 75%; }
   .about-box p {
     margin-bottom: 5rem; }
+
+.black-btn {
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  color: #FFF;
+  padding: 2rem;
+  border-radius: 30rem;
+  text-decoration: none;
+  box-shadow: 0 1.5rem 1.5rem rgba(0, 0, 0, 0.25); }
+  .black-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2); }
+
+.view-project-btn {
+  background-color: #f7f7f7;
+  color: #FF0000;
+  padding: 2.5rem;
+  text-decoration: none;
+  border-radius: 30rem;
+  box-shadow: 0 1.5rem 1.5rem rgba(0, 0, 0, 0.25);
+  transition: all .3s; }
+  .view-project-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3); }
+  .view-project-btn:active {
+    box-shadow: 0 1.5rem 1.5rem rgba(0, 0, 0, 0.25);
+    transform: scale(1); }
 
 .card-container {
   display: flex;
@@ -94,7 +124,7 @@ h3 {
       cursor: pointer; }
 
 .projects-container {
-  color: #F7F7F7;
+  color: #f7f7f7;
   display: flex;
   flex-direction: column; }
   .projects-container .project {
@@ -103,7 +133,7 @@ h3 {
     padding-bottom: 15rem;
     position: relative; }
     .projects-container .project h3 {
-      color: #F7F7F7;
+      color: #f7f7f7;
       margin-top: 18rem; }
     .projects-container .project__info {
       display: flex; }
@@ -113,7 +143,7 @@ h3 {
         align-items: center;
         flex-basis: 50%;
         margin-left: 3rem; }
-        .projects-container .project__info__img-tech-box a img {
+        .projects-container .project__info__img-tech-box img {
           width: 40rem; }
         .projects-container .project__info__img-tech-box ul {
           list-style: none; }
@@ -129,26 +159,18 @@ h3 {
           height: 4rem;
           fill: #FFF;
           margin-left: .5rem; }
-        .projects-container .project__info__description-link-box a {
-          display: flex;
-          align-items: center;
-          background-color: #000;
-          color: #FFF;
-          padding: 1rem;
-          border-radius: 30rem;
-          text-decoration: none;
-          box-shadow: 0 1.5rem 1.5rem rgba(0, 0, 0, 0.25); }
-          .projects-container .project__info__description-link-box a:active {
-            transform: translateY(2px);
-            box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2); }
     .projects-container .project--grey {
-      background-color: #F7F7F7;
+      background-color: #f7f7f7;
       color: #FF0000; }
       .projects-container .project--grey h3 {
         background-image: linear-gradient(to right, rgba(255, 39, 39, 0.9), rgba(214, 0, 0, 0.9));
+        -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
         text-transform: uppercase; }
+      .projects-container .project--grey .view-project-btn {
+        background-color: #FF0000;
+        color: #f7f7f7; }
     .projects-container .project:not(:first-child)::before, .projects-container .project:not(:first-child)::after {
       position: absolute;
       content: "";
@@ -226,7 +248,7 @@ h3 {
     opacity: 1; } }
 
 .about-section {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   margin-top: -25vh;
   padding: 25rem 0;
   text-align: center; }
@@ -237,9 +259,21 @@ h3 {
   overflow: hidden; }
   .projects-section h2 {
     margin-top: 8rem;
-    color: #F7F7F7;
+    color: #f7f7f7;
     letter-spacing: 2px;
     text-transform: uppercase; }
+    .projects-section h2 .black-btn {
+      display: flex;
+      align-items: center;
+      background-color: #000;
+      color: #FFF;
+      padding: 1rem;
+      border-radius: 30rem;
+      text-decoration: none;
+      box-shadow: 0 1.5rem 1.5rem rgba(0, 0, 0, 0.25); }
+      .projects-section h2 .black-btn:active {
+        transform: translateY(2px);
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2); }
 
 .contact-section {
   display: flex;

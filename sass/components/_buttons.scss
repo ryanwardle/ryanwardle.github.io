@@ -1,0 +1,41 @@
+//STYLING FOR GITHUB BUTTON
+.black-btn{
+  display: flex;
+  align-items: center;
+  background-color: $color-black;
+  color: $color-white;
+  padding: 2rem;
+  border-radius: 30rem;
+  text-decoration: none;
+  box-shadow: 0 1.5rem 1.5rem rgba($color-black, .25);
+
+  &:active{
+    transform: translateY(2px);
+    box-shadow: 0 1rem 1rem rgba($color-black, .2);
+  }
+}
+
+
+
+//STYLING FOR VIEW PROJECT BTN
+
+.view-project-btn{
+  background-color: $color-grey-light;
+  color: $color-primary;
+  padding: 2.5rem;
+  text-decoration: none;
+  border-radius: 30rem;
+  box-shadow: 0 1.5rem 1.5rem rgba($color-black, .25);
+  transition: all .3s;
+
+
+  &:hover{
+    transform: scale(1.05);
+    box-shadow: 0 2rem 2rem rgba($color-black, .3);
+  }
+
+  &:active{
+    box-shadow: 0 1.5rem 1.5rem rgba($color-black, .25);
+    transform: scale(1);
+  }
+}

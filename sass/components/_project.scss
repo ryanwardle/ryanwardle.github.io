@@ -1,5 +1,5 @@
 .projects-container{
-  color: #F7F7F7;
+  color: $color-grey-light;
   display: flex;
   flex-direction: column;
 
@@ -10,7 +10,7 @@
     position: relative;
 
     h3{
-      color: #F7F7F7;
+      color: $color-grey-light;
       margin-top: 18rem;
     }
 
@@ -24,7 +24,7 @@
         flex-basis: 50%;
         margin-left: 3rem;
 
-        a img{
+        img{
           width: 40rem;
         }
 
@@ -47,34 +47,22 @@
           fill: $color-white;
           margin-left: .5rem;
         }
-
-//STYLING FOR GITHUB BUTTON
-        a{
-          display: flex;
-          align-items: center;
-          background-color: $color-black;
-          color: $color-white;
-          padding: 1rem;
-          border-radius: 30rem;
-          text-decoration: none;
-          box-shadow: 0 1.5rem 1.5rem rgba($color-black, .25);
-
-          &:active{
-            transform: translateY(2px);
-            box-shadow: 0 1rem 1rem rgba($color-black, .2);
-          }
-        }
       }
     }
 
 
 //STYLING FOR SECTION WITH GREY BACKGROUND
     &--grey{
-      background-color: #F7F7F7;
+      background-color: $color-grey-light;
       color: $color-primary;
 
       h3{
         @include headingColor;
+      }
+
+      .view-project-btn{
+        background-color: $color-primary;
+        color: $color-grey-light;
       }
     }
 

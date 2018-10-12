@@ -1,5 +1,6 @@
 @mixin headingColor {
   background-image: linear-gradient(to right, rgba($color-primary-light, .9), rgba($color-primary-dark, .9));
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   text-transform: uppercase;
