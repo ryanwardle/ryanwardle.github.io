@@ -189,23 +189,32 @@ h3 {
       background: inherit; }
 
 .footer {
-  background-image: linear-gradient(to right bottom, rgba(255, 39, 39, 0.9), rgba(214, 0, 0, 0.9));
+  display: flex;
+  align-items: flex-end;
+  background-color: #D60000;
   color: #f7f7f7;
   font-size: 1.4rem;
   min-height: 10rem; }
   .footer .footer-info {
     display: flex;
     justify-content: space-between;
+    width: 100%;
     padding: 2rem;
     align-items: center; }
+    .footer .footer-info a {
+      text-decoration: none;
+      color: #f7f7f7; }
     .footer .footer-info__nav ul {
       display: flex;
       list-style: none; }
       .footer .footer-info__nav ul li {
-        padding: 0 .5rem; }
+        padding: 0 1rem; }
     .footer .footer-info__paragraph {
       display: flex;
-      align-items: flex-end; }
+      flex-direction: column;
+      justify-content: space-between; }
+      .footer .footer-info__paragraph p {
+        padding: 1.5rem 0; }
 
 .header {
   font-family: 'Permanent Marker', cursive;
