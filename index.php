@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Ryan Wardle Portfolio</title>
+</head>
+<body>
+
+<header class="header" id="header">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <text x="50%" y="50%">Ryan Wardle</text>
+  </svg>
+  <h1>Front-end web developer</h1>
+</header>
+
+<main>
+  <section class="about-section" id="about">
+    <h2 class="heading-secondary margin-bottom-large">About</h2>
+
+    <div class="about-box">
+      <div class="about-box__text">
+        <p>My name is Ryan Wardle, I am a front-end web developer in Columbus, OH. I enjoy designing and building
+        websites and web applications. I love to learn about technology and design and am constantly working to expand my knowledge of both.</p>
+      </div>
+    </div>
+
+    <h3 class="margin-bottom-large">Skills</h3>
+
+    <div class="card-container">
+      <div class="card-container__card">
+        <svg>
+          <use xlink:href="img/sprites.svg#icon-keyboard"></use>
+        </svg>
+        <h4 class="margin-bottom-small">Languages</h4>
+        <ul>
+          <li>HTML</li>
+          <li>CSS (SASS, SCSS)</li>
+          <li>Javascript</li>
+        </ul>
+      </div>
+
+      <div class="card-container__card">
+        <svg>
+          <use xlink:href="img/sprites.svg#icon-book"></use>
+        </svg>
+        <h4 class="margin-bottom-small">Libraries and Frameworks</h4>
+        <ul>
+          <li>jQuery</li>
+          <li>Bootstrap</li>
+          <li>Various Javascript Libraries</li>
+        </ul>
+      </div>
+
+      <div class="card-container__card">
+        <svg>
+          <use xlink:href="img/sprites.svg#icon-plus"></use>
+        </svg>
+        <h4 class="margin-bottom-small">Additional</h4>
+        <ul>
+          <li>Responsive design</li>
+          <li>Asynchronous Javascript (JSON, AJAX etc..)</li>
+          <li>Version control/ Github</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects-section" id="projects">
+    <h2>Projects</h2>
+
+    <div class="projects-container">
+      <div class="project">
+        <div class="project__title margin-bottom-medium">
+          <h3>Van Delay Coffee</h3>
+        </div>
+
+        <div class="project__info">
+          <div class="project__info__img-tech-box">
+            <img class="margin-bottom-medium" src="img/vandelay-img.png" alt="Van Delay Coffee Image">
+            <h4 class="margin-bottom-small">Technologies used</h4>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Flexbox</li>
+              <li>jQuery</li>
+              <li>WOW.js</li>
+            </ul>
+          </div>
+          <div class="project__info__description-link-box">
+            <p>Van Delay Coffee is a project I created for a fictional wholesale coffee business. I created a landing
+            page for the business, and built the entire project using only flexbox. I also used WOW.js with Animate CSS to
+           trigger animations when the user scrolls.</p>
+
+           <a class="view-project-btn" href="vandelay/landing-page/index.html" target="_blank"><h5>View this project</h5></a>
+
+           <a class="black-btn" href="https://github.com/ryanwardle/Landing-Page" target="_blank">View this project on GitHub <svg><use xlink:href="img/sprites.svg#icon-github-with-circle"></use></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project project--grey">
+        <div class="project__title margin-bottom-medium">
+          <h3>Currency Converter</h3>
+        </div>
+
+        <div class="project__info">
+          <div class="project__info__img-tech-box">
+            <img class="margin-bottom-medium" src="img/currency-img.png" alt="Currency Converter Image">
+            <h4 class="margin-bottom-small">Technologies used</h4>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Bootstrap</li>
+              <li>Javascript</li>
+              <li>Animate CSS</li>
+              <li>Fixer API</li>
+            </ul>
+          </div>
+          <div class="project__info__description-link-box">
+            <p>I used the Fixer API to created a currency converter that will take in one of the the world's seven most popular currencies,
+              and convert it to the remaining six.</p>
+
+           <a class="view-project-btn" href="currency/currency-converter/index.html" target="_blank"><h5>View this project</h5></a>
+
+           <a class="black-btn" href="https://github.com/ryanwardle/Currency-Converter" target="_blank">View this project on GitHub <svg><use xlink:href="img/sprites.svg#icon-github-with-circle"></use></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project__title margin-bottom-medium">
+          <h3>Godfather's Pizza</h3>
+        </div>
+
+        <div class="project__info">
+          <div class="project__info__img-tech-box">
+            <img class="margin-bottom-medium" src="img/godfathers-img.png" alt="Godfather's Pizza Image">
+            <h4 class="margin-bottom-small">Technologies used</h4>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Bootstrap</li>
+              <li>Jquery</li>
+              <li>Google Maps API</li>
+            </ul>
+          </div>
+          <div class="project__info__description-link-box">
+            <p>Godfather's Pizza is a fictional business that I created, a local pizza restaurant. I designed and coded a website for the business, providing a menu for the business and
+            a map with the location of the business.</p>
+
+            <a class="view-project-btn" href="godfathers/pizza-restaurant/index.html" target="_blank"><h5>View this project</h5></a>
+
+            <a class="black-btn" href="https://github.com/ryanwardle/Pizza-Restaurant" target="_blank">View this project on GitHub <svg><use xlink:href="img/sprites.svg#icon-github-with-circle"></use></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <h2 class="heading-secondary">Contact</h2>
+    <p>In order to contact me or to inquire about having a website built, please send me a message using the form below</p>
+    <form action="" class="form">
+      <input type="text" placeholder="NAME" class="form__input">
+      <input type="email" placeholder="EMAIL" class="form__input">
+      <textarea name="name" rows="8" cols="80" placeholder="SEND ME A MESSAGE" class="form__input"></textarea>
+      <input type="submit" value="SUBMIT" class="form__input form__input--submit">
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-info">
+    <div class="footer-info__nav">
+      <ul>
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-info__paragraph">
+      <p>This website was designed and coded by Ryan Wardle.</p>
+      <a href="https://github.com/ryanwardle" target="_blank">View my profile on GitHub</a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
