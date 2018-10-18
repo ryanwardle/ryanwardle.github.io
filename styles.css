@@ -9,7 +9,8 @@ html {
 body {
   font-family: 'Lato', sans-serif;
   font-size: 1.8rem;
-  padding: 3rem; }
+  padding: 3rem;
+  overflow-x: hidden; }
 
 .margin-bottom-small {
   margin-bottom: 2rem; }
@@ -232,7 +233,7 @@ h3 {
     left: 50%;
     transform: translate(-66%, -50%); }
     .header svg text {
-      stroke: #fff;
+      stroke: #FFF;
       stroke-width: 2;
       fill: none;
       stroke-dasharray: 500;
@@ -255,6 +256,44 @@ h3 {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+.navigation {
+  font-family: 'Permanent Marker', cursive;
+  margin-top: 0;
+  padding-top: 2rem; }
+  .navigation__list {
+    color: #f7f7f7;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 100;
+    width: 100vw;
+    font-size: 2.2rem; }
+  .navigation__item a,
+  .navigation__item a:link,
+  .navigation__item a:visited {
+    text-decoration: none;
+    color: #f7f7f7;
+    position: relative; }
+  .navigation__item a::after,
+  .navigation__item a::before {
+    display: inline-block;
+    opacity: 0;
+    transition: transform .3s, opacity .2s; }
+  .navigation__item a::before {
+    content: '[';
+    margin-right: 1rem;
+    transform: translateX(2rem); }
+  .navigation__item a::after {
+    content: ']';
+    margin-left: 1rem;
+    transform: translateX(-2rem); }
+  .navigation__item a:hover::before,
+  .navigation__item a:hover::after,
+  .navigation__item a:focus::before,
+  .navigation__item a:focus::after {
+    opacity: 1;
+    transform: translateX(0); }
 
 .about-section {
   background-color: #f7f7f7;

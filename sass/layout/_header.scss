@@ -1,6 +1,6 @@
 .header{
   font-family: 'Permanent Marker', cursive;
-  color: #f7f7f7;
+  color: $color-grey-light;
   background-image: linear-gradient(to right bottom, rgba($color-primary-light, .9), rgba($color-primary-dark, .9)), url(img/hero-img.jpeg);
   background-size: cover;
   height: 95vh;
@@ -18,7 +18,7 @@
 
 
     text{
-      stroke: #fff;
+      stroke: $color-white;
       stroke-width: 2;
       fill: none;
       stroke-dasharray: 500;

@@ -1,0 +1,54 @@
+.navigation{
+  font-family: 'Permanent Marker', cursive;
+  margin-top: 0;
+  padding-top: 2rem;
+
+  &__list{
+    color: $color-grey-light;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 100;
+    width: 100vw;
+    font-size: 2.2rem;
+
+  }
+
+  &__item{
+
+    a,
+    a:link,
+    a:visited{
+      text-decoration: none;
+      color: $color-grey-light;
+      position: relative;
+    }
+
+    a::after,
+    a::before{
+      display: inline-block;
+      opacity: 0;
+      transition: transform .3s, opacity .2s;
+    }
+
+    a::before{
+      content: '[';
+      margin-right: 1rem;
+      transform: translateX(2rem);
+    }
+
+    a::after{
+      content: ']';
+      margin-left: 1rem;
+      transform: translateX(-2rem);
+    }
+
+    a:hover::before,
+    a:hover::after,
+    a:focus::before,
+    a:focus::after{
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
