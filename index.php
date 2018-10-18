@@ -11,7 +11,22 @@
 </head>
 <body>
 
+
+
 <header class="header" id="header">
+
+  <nav class="navigation">
+
+    <ul class="navigation__list">
+      <li class="navigation__item"><a href="#header">Home</a></li>
+      <li class="navigation__item"><a href="#about">About</a></li>
+      <li class="navigation__item"><a href="#projects">Projects</a></li>
+      <li class="navigation__item"><a href="#contact">Contact</a></li>
+    </ul>
+
+  </nav>
+
+
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <text x="50%" y="50%">Ryan Wardle</text>
   </svg>
@@ -165,11 +180,12 @@
   <section class="contact-section" id="contact">
     <h2 class="heading-secondary">Contact</h2>
     <p>In order to contact me or to inquire about having a website built, please send me a message using the form below</p>
-    <form action="" class="form">
-      <input type="text" placeholder="NAME" class="form__input">
-      <input type="email" placeholder="EMAIL" class="form__input">
-      <textarea name="name" rows="8" cols="80" placeholder="SEND ME A MESSAGE" class="form__input"></textarea>
-      <input type="submit" value="SUBMIT" class="form__input form__input--submit">
+    <form action="contactform.php" method="post" class="form">
+      <input type="text" name="name" placeholder="NAME" class="form__input">
+      <input type="email" name="email" placeholder="EMAIL" class="form__input">
+      <input type="text" name="subject" placeholder="SUBJECT" class="form__input">
+      <textarea name="message" rows="8" cols="80" placeholder="SEND ME A MESSAGE" class="form__input"></textarea>
+      <input type="submit" name="submit" value="SUBMIT" class="form__input form__input--submit">
     </form>
   </section>
 </main>
@@ -196,6 +212,7 @@
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+  <script src="contactform.php"></script>
   <script src="script.js"></script>
 </body>
 </html>

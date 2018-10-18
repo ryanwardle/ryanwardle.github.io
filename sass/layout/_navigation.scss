@@ -32,13 +32,13 @@
     }
 
     a::before{
-      content: '[';
+      content: '{';
       margin-right: 1rem;
       transform: translateX(2rem);
     }
 
     a::after{
-      content: ']';
+      content: '}';
       margin-left: 1rem;
       transform: translateX(-2rem);
     }
