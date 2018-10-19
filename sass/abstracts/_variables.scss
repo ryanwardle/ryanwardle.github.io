@@ -6,3 +6,12 @@ $color-grey-light: #f7f7f7;
 
 $color-white: #FFF;
 $color-black: #000;
+
+
+
+//RESPONSIVE BREAKPOINTS
+//written in em, breakpoint / 16px
+$bp-largest: 75em;  //1200px / 16
+$bp-large: 62.5em; //1000px / 16
+$bp-medium: 50em; //800px / 16
+$bp-small: 37.5em; //600px / 16
