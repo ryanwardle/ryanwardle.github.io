@@ -180,6 +180,9 @@
   <section class="contact-section" id="contact">
     <h2 class="heading-secondary">Contact</h2>
     <p>In order to contact me or to inquire about having a website built, please send me a message using the form below</p>
+
+    <?php
+
     <form action="contactform.php" method="post" class="form">
       <input type="text" name="name" placeholder="NAME" class="form__input">
       <input type="email" name="email" placeholder="EMAIL" class="form__input">
@@ -187,6 +190,9 @@
       <textarea name="message" rows="8" cols="80" placeholder="SEND ME A MESSAGE" class="form__input"></textarea>
       <input type="submit" name="submit" value="SUBMIT" class="form__input form__input--submit">
     </form>
+
+     ?>
+
   </section>
 </main>
 
