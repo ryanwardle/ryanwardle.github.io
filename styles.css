@@ -232,7 +232,7 @@ h3 {
     position: absolute;
     top: 40%;
     left: 50%;
-    transform: translate(-66%, -50%); }
+    transform: translate(-50%, -50%); }
     .header svg text {
       stroke: #FFF;
       stroke-width: 2;
