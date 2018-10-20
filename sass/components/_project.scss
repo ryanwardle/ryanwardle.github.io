@@ -17,6 +17,10 @@
     &__info{
       display: flex;
 
+      @media only screen and(max-width: $bp-medium){
+        flex-direction: column;
+      }
+
       &__img-tech-box{
         display: flex;
         flex-direction: column;
@@ -24,9 +28,17 @@
         flex-basis: 50%;
         margin-left: 3rem;
 
+        @media only screen and(max-width: $bp-medium){
+          flex-direction: row;
+        }
+
         img{
           width: 40rem;
         }
+
+
+//PUT H4 AND UL IN DIV THAT I HAVENT NAMED TO KEEP THE H4 ABOVE THE UL
+//NEED TO RELOOK AND HEADER SECTION, FRONT END DEVELOPER PART AND POSTIONING
 
         ul{
           list-style: none;
@@ -40,6 +52,10 @@
         justify-content: space-between;
         flex-basis: 50%;
         margin-right: 3rem;
+
+        @media only screen and(max-width: $bp-medium){
+          flex-direction: row;
+        }
 
         svg{
           width: 4rem;

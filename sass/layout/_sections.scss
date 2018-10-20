@@ -26,6 +26,12 @@
   background-color: $color-grey-light;
   overflow: hidden;
 
+  p,
+  h2{
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
   h2{
     margin-top: 8rem;
     letter-spacing: 2px;

@@ -7,6 +7,10 @@
 html{
   font-size: 62.5%;
   scroll-behavior: smooth;
+
+  @media only screen and(max-width: $bp-large){
+    font-size: 50%;
+  }
 }
 
 body{
@@ -14,4 +18,8 @@ body{
   font-size: 1.8rem;
   padding: 3rem;
   overflow-x: hidden;
+
+  @media only screen and(max-width: $bp-largest){
+    padding: 0;
+  }
 }
