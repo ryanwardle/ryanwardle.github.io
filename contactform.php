@@ -16,6 +16,4 @@
       header("Location: index.php?mailsend");
     }
 
-
-
  ?>

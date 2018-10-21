@@ -9,9 +9,19 @@
     padding-bottom: 15rem;
     position: relative;
 
+    @media only screen and(max-width: $bp-medium){
+      padding-bottom: 10rem;
+    }
+
     h3{
       color: $color-grey-light;
       margin-top: 18rem;
+    }
+
+    &__title{
+      @media only screen and(max-width: $bp-medium){
+        margin-bottom: 6rem;
+      }
     }
 
     &__info{
@@ -28,16 +38,10 @@
         flex-basis: 50%;
         margin-left: 3rem;
 
-        @media only screen and(max-width: $bp-medium){
-          flex-direction: row;
-        }
-
         img{
           width: 40rem;
         }
 
-
-//PUT H4 AND UL IN DIV THAT I HAVENT NAMED TO KEEP THE H4 ABOVE THE UL
 //NEED TO RELOOK AND HEADER SECTION, FRONT END DEVELOPER PART AND POSTIONING
 
         ul{
@@ -54,7 +58,15 @@
         margin-right: 3rem;
 
         @media only screen and(max-width: $bp-medium){
-          flex-direction: row;
+
+          & *{
+            margin-top: 6rem;
+            margin-left: 3rem;
+          }
+
+          h5{
+            margin: 0 auto;
+          }
         }
 
         svg{
