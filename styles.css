@@ -272,8 +272,8 @@ h3 {
       stroke: #FFF;
       stroke-width: 2;
       fill: none;
-      stroke-dasharray: 700;
-      stroke-dashoffset: 700;
+      stroke-dasharray: 1700;
+      stroke-dashoffset: 1700;
       animation: animateDrawing 3s linear forwards; }
   .header h1 {
     width: 100%;
