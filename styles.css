@@ -50,6 +50,9 @@ h3 {
   .about-box__text {
     padding: 5rem;
     width: 75%; }
+    @media only screen and (max-width: 37.5em) {
+      .about-box__text {
+        width: 90%; } }
   .about-box p {
     margin-bottom: 5rem; }
 
@@ -102,6 +105,9 @@ h3 {
         width: 40%; }
         .card-container__card:not(:last-child) {
           margin-bottom: 8rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .card-container__card {
+        width: 70%; } }
     .card-container__card:hover, .card-container__card:focus {
       transform: scale(1.05) translateY(-1.5rem);
       box-shadow: 0 2.5rem 4.5rem rgba(0, 0, 0, 0.4); }
@@ -124,10 +130,9 @@ h3 {
   width: 60%;
   margin-top: 6rem;
   padding-bottom: 8rem; }
-  .form p,
-  .form h2 {
-    margin-left: 4rem;
-    margin-right: 4rem; }
+  @media only screen and (max-width: 37.5em) {
+    .form {
+      width: 90%; } }
   .form__input {
     width: 100%;
     padding: 1rem;
@@ -173,8 +178,14 @@ h3 {
         align-items: center;
         flex-basis: 50%;
         margin-left: 3rem; }
+        @media only screen and (max-width: 37.5em) {
+          .projects-container .project__info__img-tech-box {
+            margin-left: 0; } }
         .projects-container .project__info__img-tech-box img {
           width: 40rem; }
+          @media only screen and (max-width: 37.5em) {
+            .projects-container .project__info__img-tech-box img {
+              width: 34rem; } }
         .projects-container .project__info__img-tech-box ul {
           list-style: none; }
       .projects-container .project__info__description-link-box {
@@ -238,6 +249,11 @@ h3 {
     width: 100%;
     padding: 2rem;
     align-items: flex-end; }
+    @media only screen and (max-width: 37.5em) {
+      .footer .footer-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; } }
     .footer .footer-info a {
       text-decoration: none;
       color: #f7f7f7; }
@@ -260,6 +276,9 @@ h3 {
   background-size: cover;
   height: 95vh;
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      font-size: 70%; } }
   .header svg {
     width: 100%;
     font-size: 8rem;
@@ -275,6 +294,9 @@ h3 {
       stroke-dasharray: 500;
       stroke-dashoffset: 500;
       animation: animateDrawing 3s linear forwards; }
+      @media only screen and (max-width: 37.5em) {
+        .header svg text {
+          font-size: 60%; } }
   .header h1 {
     width: 100%;
     text-align: center;
@@ -368,3 +390,6 @@ h3 {
     letter-spacing: 2px; }
   .contact-section p {
     margin-top: 4rem; }
+    @media only screen and (max-width: 37.5em) {
+      .contact-section p {
+        width: 90%; } }

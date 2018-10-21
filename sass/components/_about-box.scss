@@ -6,6 +6,10 @@
   &__text{
     padding: 5rem;
     width: 75%;
+
+    @media only screen and(max-width: $bp-small){
+      width: 90%;
+    }
   }
 
   p{

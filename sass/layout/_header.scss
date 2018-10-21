@@ -6,7 +6,9 @@
   height: 95vh;
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
 
-//NEED TO LOOK AT POSITIONING AND SIZE OF FRONT END DEVELOPER PART AT MED BREAKPONT, 601-800PX
+  @media only screen and(max-width: $bp-small){
+    font-size: 70%;
+  }
 
   svg{
     width: 100%;
@@ -25,6 +27,10 @@
       stroke-dasharray: 500;
       stroke-dashoffset: 500;
       animation: animateDrawing 3s linear forwards;
+
+      @media only screen and(max-width: $bp-small){
+        font-size: 60%;
+      }
     }
   }
 

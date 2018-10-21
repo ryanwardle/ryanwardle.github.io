@@ -38,8 +38,16 @@
         flex-basis: 50%;
         margin-left: 3rem;
 
+        @media only screen and(max-width: $bp-small){
+          margin-left: 0;
+        }
+
         img{
           width: 40rem;
+
+          @media only screen and(max-width: $bp-small){
+            width: 34rem;
+          }
         }
 
 //NEED TO RELOOK AND HEADER SECTION, FRONT END DEVELOPER PART AND POSTIONING
