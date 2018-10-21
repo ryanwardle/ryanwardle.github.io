@@ -194,7 +194,8 @@ h3 {
           width: 4rem;
           height: 4rem;
           fill: #FFF;
-          margin-left: .5rem; }
+          margin-left: .5rem;
+          margin-top: 0; }
     .projects-container .project--grey {
       background-color: #f7f7f7;
       color: #FF0000; }
