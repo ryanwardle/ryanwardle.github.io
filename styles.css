@@ -275,7 +275,8 @@ h3 {
   background-image: linear-gradient(to right bottom, rgba(255, 39, 39, 0.9), rgba(214, 0, 0, 0.9)), url(img/hero-img.jpeg);
   background-size: cover;
   height: 95vh;
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); }
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  overflow-x: hidden; }
   @media only screen and (max-width: 37.5em) {
     .header {
       font-size: 70%; } }
