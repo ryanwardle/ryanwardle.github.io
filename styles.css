@@ -276,7 +276,7 @@ h3 {
   background-size: cover;
   height: 95vh;
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-  overflow-x: hidden; }
+  margin: 0; }
   @media only screen and (max-width: 37.5em) {
     .header {
       font-size: 70%; } }
