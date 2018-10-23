@@ -101,18 +101,28 @@ $('a[href*="#"]')
   //BUTTON SUBMIT ALERT
 
   $('.submit-btn').click(function(){
-    alert('Thank you, we will be contacting you soon!')
+    const firstName = document.getElementById('first-name').value;
+    const lastName = document.getElementById('last-name').value;
+    const email = document.getElementById('email').value;
 
-    $('.first-name').wrap('<form>').closest('form').get(0).reset();
-    $('.first-name').unwrap();
-    $('.last-name').wrap('<form>').closest('form').get(0).reset();
-    $('.last-name').unwrap();
-    $('.e-mail').wrap('<form>').closest('form').get(0).reset();
-    $('.e-mail').unwrap();
-    $('.text-area').wrap('<form>').closest('form').get(0).reset();
-    $('.text-area').unwrap();
+    if (firstName === '' || firstName.match(/\d/)) {
+      alert('You must input a valid first name');
+    }else if (lastName === '' || lastName.match(/\d/)) {
+      alert('You must input a valid last name');
+    }else if (email === '' || !email.match(/[@]/)) {
+      alert('You must input a valid email');
+    }else{
+      alert('Thank you, we will be contacting you soon!');
 
-
+      $('.first-name').wrap('<form>').closest('form').get(0).reset();
+      $('.first-name').unwrap();
+      $('.last-name').wrap('<form>').closest('form').get(0).reset();
+      $('.last-name').unwrap();
+      $('.e-mail').wrap('<form>').closest('form').get(0).reset();
+      $('.e-mail').unwrap();
+      $('.text-area').wrap('<form>').closest('form').get(0).reset();
+      $('.text-area').unwrap();
+    }
   });
 
 });

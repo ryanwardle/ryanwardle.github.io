@@ -74,7 +74,6 @@ function validateForm(){
   const bag1 = document.getElementById('bag-1').value;
   const bag2 = document.getElementById('bag-2').value;
   const bag3 = document.getElementById('bag-3').value;
-  console.log(bag1)
 
   if(name === '' || name.match(/\d/)){
       alert(`You must input a valid name`);
