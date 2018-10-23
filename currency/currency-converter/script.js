@@ -112,23 +112,22 @@ BUTTON.addEventListener('click', function(){
 });
 
 
-//ADDING TOUCH EVENT FOR TABLETS AND PHONES
-BUTTON.addEventListener('touchend', handleEnd(event){
-    event.preventDefault();
-    BUTTON.click();
-});
-
-
 //ADDING ENTER KEYPRESS EVENT
  const INPUT = document.getElementById('amount-converted');
 
-/*INPUT.addEventListener('keypress', function(event){
+INPUT.addEventListener('keypress', function(event){
   if (event.keyCode === 13) {
     event.preventDefault();
     BUTTON.click();
   }
-});*/
+});
 
+
+//ADDING TOUCH EVENT FOR TABLETS AND PHONES
+/*BUTTON.addEventListener('touchend', handleEnd(event){
+    event.preventDefault();
+    BUTTON.click();
+});*/
 
 
 
