@@ -275,8 +275,7 @@ h3 {
   background-image: linear-gradient(to right bottom, rgba(255, 39, 39, 0.9), rgba(214, 0, 0, 0.9)), url(img/hero-img.jpeg);
   background-size: cover;
   height: 95vh;
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-  margin: 0; }
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); }
   @media only screen and (max-width: 37.5em) {
     .header {
       font-size: 70%; } }
@@ -321,7 +320,8 @@ h3 {
 .navigation {
   font-family: 'Permanent Marker', cursive;
   margin-top: 0;
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  position: relative; }
   .navigation__list {
     color: #f7f7f7;
     list-style: none;
@@ -330,6 +330,9 @@ h3 {
     z-index: 100;
     width: 100vw;
     font-size: 2.2rem; }
+    @media only screen and (max-width: 50em) {
+      .navigation__list {
+        display: none; } }
   .navigation__item a,
   .navigation__item a:link,
   .navigation__item a:visited {
@@ -355,6 +358,25 @@ h3 {
   .navigation__item a:focus::after {
     opacity: 1;
     transform: translateX(0); }
+  .navigation__icon-menu, .navigation__icon-cross {
+    display: none;
+    position: absolute;
+    top: 3rem;
+    right: 3rem; }
+    .navigation__icon-menu svg, .navigation__icon-cross svg {
+      width: 4rem;
+      height: 4rem;
+      fill: #f7f7f7; }
+  @media only screen and (max-width: 50em) {
+    .navigation__icon-menu {
+      display: block; } }
+  .navigation .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 4rem;
+    right: 4rem; }
 
 .about-section {
   background-color: #f7f7f7;

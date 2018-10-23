@@ -2,6 +2,7 @@
   font-family: 'Permanent Marker', cursive;
   margin-top: 0;
   padding-top: 2rem;
+  position: relative;
 
   &__list{
     color: $color-grey-light;
@@ -12,6 +13,9 @@
     width: 100vw;
     font-size: 2.2rem;
 
+    @media only screen and(max-width: $bp-medium){
+      display: none;
+    }
   }
 
   &__item{
@@ -50,5 +54,38 @@
       opacity: 1;
       transform: translateX(0);
     }
+  }
+
+  //MOBILE NAVIGATION
+
+  &__icon-menu,
+  &__icon-cross{
+    display: none;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+
+    svg{
+      width: 4rem;
+      height: 4rem;
+      fill: $color-grey-light;
+    }
+  }
+
+  &__icon-menu{
+    @media only screen and(max-width: $bp-medium){
+      display: block;
+    }
+  }
+
+  //MOBILE NAV CLASS, ADDED AND REMOVED IN JS
+
+  .mobile-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
   }
 }

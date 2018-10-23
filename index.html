@@ -20,7 +20,19 @@
 
   <nav class="navigation">
 
-    <ul class="navigation__list">
+    <a class="navigation__icon-menu" id="icon-menu" href="#">
+      <svg>
+        <use xlink:href="img/sprites.svg#icon-menu"></use>
+      </svg>
+    </a>
+
+    <a class="navigation__icon-cross" id="icon-cross" href="#">
+      <svg>
+        <use xlink:href="img/sprites.svg#icon-cross"></use>
+      </svg>
+    </a>
+
+    <ul class="navigation__list" id="nav-list">
       <li class="navigation__item"><a href="#header">Home</a></li>
       <li class="navigation__item"><a href="#about">About</a></li>
       <li class="navigation__item"><a href="#projects">Projects</a></li>
@@ -221,6 +233,6 @@
 </footer>
 
   <script src="contactform.php"></script>
-  <script src="script.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
