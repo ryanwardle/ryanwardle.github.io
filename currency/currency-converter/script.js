@@ -122,6 +122,11 @@ INPUT.addEventListener('keypress', function(event){
   }
 });
 
+INPUT.addEventListener('touchend', function(event){
+    event.preventDefault();
+    BUTTON.click();
+});
+
 
 
 //RESET BUTTON
