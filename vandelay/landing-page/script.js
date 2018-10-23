@@ -66,11 +66,34 @@ $(function() {
 
 
 
+//FORM VALIDATION FUNCTION
+function validateForm(){
+  const email = document.getElementById('email').value;
+  const name = document.getElementById('name').value;
+  const address = document.getElementById('address').value;
+  const bag1 = document.getElementById('bag-1').value;
+  const bag2 = document.getElementById('bag-2').value;
+  const bag3 = document.getElementById('bag-3').value;
+
+  if(name === '' || name.match(/\d/)){
+      alert(`You must input a valid name`);
+  }else if (!address.match(/[a-zA-Z]/) || !address.match(/\d/)) {
+    alert(`You must input a valid address`);
+  }else if (email === '' || !email.match(/[@]/)) {
+    alert(`You must input a valid email address`);
+  }else if ((bag1 === 0 || bag1 === '') && (bag2 === 0 || bag2 === '') && (bag3 === 0 || bag3 === '')) {
+    alert(`You must order at least one bag of coffee`);
+  }else{
+    alert(`Thank you. We have sent a confirmation email to ${email}`);
+  }
+}
+
 
 //SUBMIT BUTTON
 
 const submit = document.getElementById('submit');
-const email = document.getElementById('email').value;
+
+
 submit.addEventListener('click', function(){
-  alert(`Thank you. We have sent a confirmation email to ${email}`);
+  validateForm();
 });
