@@ -126,7 +126,7 @@ INPUT.addEventListener('keypress', function(event){
 //ADDING TOUCH EVENT FOR TABLETS AND PHONES
 INPUT.addEventListener('touchend', handleEnd(event){
     event.preventDefault();
-    BUTTON.click();
+    document.getElementById('convert-button').click();
 });
 
 
