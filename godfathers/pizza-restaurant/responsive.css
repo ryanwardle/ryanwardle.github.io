@@ -41,11 +41,12 @@
   .info-row{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
   }
 
   .info-hours{
-    margin-top: 350px;
+    margin-top: 250px;
+    display: block;
   }
 
   footer{
