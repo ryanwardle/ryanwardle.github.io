@@ -8,7 +8,7 @@ BUTTON.addEventListener('click', function(){
 
   async function getData() {
 
-    const response = await fetch('http://data.fixer.io/api/latest?access_key=6dbe6e42afe0aed845647ba509edc054&symbols=AUD,CAD,CNY,GBP,JPY,USD&format=1');
+    const response = await fetch('https://data.fixer.io/api/latest?access_key=6dbe6e42afe0aed845647ba509edc054&symbols=AUD,CAD,CNY,GBP,JPY,USD&format=1');
 
     const data = await response.json();
 
