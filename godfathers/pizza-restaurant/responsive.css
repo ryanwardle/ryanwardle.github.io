@@ -41,11 +41,21 @@
   .info-row{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    overflow: hidden;
   }
 
-  .info-hours{
-    margin-top: 250px;
+  .info-row div:not(#map){
+    min-height: 300px;
+  }
+
+  .info-hours .wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .info-hours .wrapper h3{
+    margin-top: 50px;
   }
 
   footer{
