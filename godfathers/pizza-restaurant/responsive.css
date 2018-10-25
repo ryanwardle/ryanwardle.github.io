@@ -38,15 +38,14 @@
     display: none;
   }
 
-  .info-hours{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+  .info-row{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
   }
 
-  .info-location h3{
-    display: flex;
-    justify-content: center;
+  .info-hours{
+    margin-top: 250px;
   }
 
   footer{
