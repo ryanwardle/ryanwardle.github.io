@@ -44,10 +44,14 @@
     height: 100%;
   }
 
-  .info-hours{
+  #map{
+    margin-bottom: 250px;
+  }
+
+  /*.info-hours{
     margin-top: 250px;
     display: block;
-  }
+  }*/
 
   footer{
     font-size: .8em
