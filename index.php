@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Ryan Wardle is a web developer located in Columbus, OH.">
+  <meta name="keywords" content="ryan, wardle, columbus, ohio, web, developer, website, build">
   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
@@ -17,7 +19,19 @@
 
   <nav class="navigation">
 
-    <ul class="navigation__list">
+    <a class="navigation__icon-menu" id="icon-menu" href="#">
+      <svg>
+        <use xlink:href="img/sprites.svg#icon-menu"></use>
+      </svg>
+    </a>
+
+    <a class="navigation__icon-cross" id="icon-cross" href="#">
+      <svg>
+        <use xlink:href="img/sprites.svg#icon-cross"></use>
+      </svg>
+    </a>
+
+    <ul class="navigation__list" id="nav-list">
       <li class="navigation__item"><a href="#header">Home</a></li>
       <li class="navigation__item"><a href="#about">About</a></li>
       <li class="navigation__item"><a href="#projects">Projects</a></li>
@@ -28,7 +42,7 @@
 
 
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <text x="50%" y="50%">Ryan Wardle</text>
+    <text x="50%" y="50%" text-anchor="middle">Ryan Wardle</text>
   </svg>
   <h1>Front-end web developer</h1>
 </header>
@@ -97,14 +111,16 @@
         <div class="project__info">
           <div class="project__info__img-tech-box">
             <img class="margin-bottom-medium" src="img/vandelay-img.png" alt="Van Delay Coffee Image">
-            <h4 class="margin-bottom-small">Technologies used</h4>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Flexbox</li>
-              <li>jQuery</li>
-              <li>WOW.js</li>
-            </ul>
+            <div>
+              <h4 class="margin-bottom-small">Technologies used</h4>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Flexbox</li>
+                <li>jQuery</li>
+                <li>WOW.js</li>
+              </ul>
+            </div>
           </div>
           <div class="project__info__description-link-box">
             <p>Van Delay Coffee is a project I created for a fictional wholesale coffee business. I created a landing
@@ -126,15 +142,17 @@
         <div class="project__info">
           <div class="project__info__img-tech-box">
             <img class="margin-bottom-medium" src="img/currency-img.png" alt="Currency Converter Image">
-            <h4 class="margin-bottom-small">Technologies used</h4>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Bootstrap</li>
-              <li>Javascript</li>
-              <li>Animate CSS</li>
-              <li>Fixer API</li>
-            </ul>
+            <div>
+              <h4 class="margin-bottom-small">Technologies used</h4>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+                <li>Javascript</li>
+                <li>Animate CSS</li>
+                <li>Fixer API</li>
+              </ul>
+            </div>
           </div>
           <div class="project__info__description-link-box">
             <p>I used the Fixer API to created a currency converter that will take in one of the the world's seven most popular currencies,
@@ -155,14 +173,16 @@
         <div class="project__info">
           <div class="project__info__img-tech-box">
             <img class="margin-bottom-medium" src="img/godfathers-img.png" alt="Godfather's Pizza Image">
-            <h4 class="margin-bottom-small">Technologies used</h4>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Bootstrap</li>
-              <li>Jquery</li>
-              <li>Google Maps API</li>
-            </ul>
+            <div>
+              <h4 class="margin-bottom-small">Technologies used</h4>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+                <li>jQuery</li>
+                <li>Google Maps API</li>
+              </ul>
+            </div>
           </div>
           <div class="project__info__description-link-box">
             <p>Godfather's Pizza is a fictional business that I created, a local pizza restaurant. I designed and coded a website for the business, providing a menu for the business and
@@ -182,13 +202,12 @@
     <p>In order to contact me or to inquire about having a website built, please send me a message using the form below</p>
 
 
-
-    <form action="contactform.php" method="post" class="form">
+    <form action="contactform.php" class="form">
       <input type="text" name="name" placeholder="NAME" class="form__input">
       <input type="email" name="email" placeholder="EMAIL" class="form__input">
       <input type="text" name="subject" placeholder="SUBJECT" class="form__input">
       <textarea name="message" rows="8" cols="80" placeholder="SEND ME A MESSAGE" class="form__input"></textarea>
-      <input type="submit" name="submit" value="SUBMIT" class="form__input form__input--submit">
+      <input type="submit" value="SUBMIT" class="form__input form__input--submit">
     </form>
 
   </section>
@@ -212,11 +231,7 @@
   </div>
 </footer>
 
-
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
   <script src="contactform.php"></script>
-  <script src="script.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
