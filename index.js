@@ -1,3 +1,5 @@
+//TOGGLE MOBILE NAV
+
 function toggleMobileNav(){
 
   const mobileIconMenu = document.getElementById('icon-menu');
@@ -22,3 +24,22 @@ function toggleMobileNav(){
 }
 
 toggleMobileNav();
+
+
+
+//FORM VALIDATION
+
+function validateForm(){
+
+  const name = document.getElementById('name');
+
+  if(name.value === '' || name.match(/\d/)){
+    alret('You must enter a valid name')
+  }
+}
+
+const submit = document.getElementById('submit');
+
+submit.addEventListener('click', function(){
+  validateForm();
+});

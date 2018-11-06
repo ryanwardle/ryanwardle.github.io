@@ -366,7 +366,11 @@ h3 {
     .navigation__icon-menu svg, .navigation__icon-cross svg {
       width: 4rem;
       height: 4rem;
-      fill: #f7f7f7; }
+      fill: #f7f7f7;
+      display: none; }
+      @media only screen and (max-width: 50em) {
+        .navigation__icon-menu svg, .navigation__icon-cross svg {
+          display: block; } }
   @media only screen and (max-width: 50em) {
     .navigation__icon-menu {
       display: block; } }

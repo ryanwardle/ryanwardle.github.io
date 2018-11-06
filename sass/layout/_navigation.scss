@@ -69,6 +69,11 @@
       width: 4rem;
       height: 4rem;
       fill: $color-grey-light;
+      display: none;
+
+      @media only screen and(max-width: $bp-medium){
+        display: block;
+      }
     }
   }
 
